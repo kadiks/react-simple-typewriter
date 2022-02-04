@@ -151,7 +151,7 @@ const MyComponent = () => {
 
   const {text} = useTypewriter({
     words: ['Hello', 'From', 'Typewriter', 'Hook!'],
-    loop: {0}, // Infinit
+    loop: 0, // Infinite
   })
 
   return (
@@ -174,7 +174,7 @@ const MyComponent = () => {
 
   const {text} = useTypewriter({
     words: ['Hello', 'From', 'Typewriter', 'Hook!'],
-    loop: {3},
+    loop: 3,
     onLoopDone: () => console.log(`loop completed after 3 runs.`),
   })
 
